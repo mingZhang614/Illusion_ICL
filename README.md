@@ -4,6 +4,13 @@
 
 This project is designed for A Two-Stage ICL Pipeline for Robust Visual Illusion Understanding. It provides the required script and data paths for the experiment.
 Paper ID: 34
+
+## Image Format Conversion
+
+- The images provided by this project have undergone a uniform format conversion. 
+- Put your image data in `Task2_test_data/image` and run the `[image_preprocess.py](Experiment/Task_2/image_preprocess.py)`
+- The processed images will be saved in the `Task2_test_data/processed_pngs_mix` folder.
+
 ## Executable Script
 
 - The main executable script is located at `Experiment/Task_2/Test_Gemini.py`.
@@ -16,20 +23,19 @@ Paper ID: 34
 
 - The reference images for ICL are stored in the `Task2_test_data/ICL_images2` folder for use during testing.
 
-## Image Format Conversion
-
-- The images provided by this project have undergone a uniform format conversion. The processed images are saved in the `Task2_test_data/processed_pngs_mix` folder.
 
 ## Usage Instructions
+1**Image Processing**:
+   If you need to process the image first by [image_preprocess.py](Experiment/Task_2/image_preprocess.py), 
+and the processed images can be found in `Task2_test_data/processed_pngs_mix`.
 
-1. **Run the Experiment**:
+2**Run the Experiment**:
    Run the `Test_Gemini.py` script after ensuring all dependencies are installed and the data paths are configured properly.
    
-2. **Viewing Results**:
+3**Viewing Results**:
    After the testing is complete, check the output results in the `Task2_test_data/2Stage_ICL_results` folder.
 
-3. **Image Processing**:
-   If you need to use the original images, the reference images are located in `Task2_test_data/ICL_images2`, and the processed images can be found in `Task2_test_data/processed_pngs_mix`.
+
 
 ## Dependencies
 
